@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p class="title">Alert box</p>
+        <button id="close">X</button>
+    </div>
+    <button class="btn1">버튼1</button>
+    <button class="btn2">버튼2</button>
+
+
+    <script>
+        const alertBox = document.querySelector('.alert-box');
+        const titleBox = document.querySelector('.title');
+        const closeBox = document.getElementById('close')
+        const btn1 = document.querySelector('.btn1');
+        const btn2 = document.querySelector('.btn2');
+    
+        closeBox.addEventListener('click', function(){
+        alertBox.style.display = 'none';
+    })
+
+    function openAlert() {
+    titleBox.innerHTML = 'input id';
+    alertBox.style.display = 'block';
+}
+
+    btn1.addEventListener('click', openAlert);
+    btn2.addEventListener('click', openAlert);
+    
+    
+
+    </script>
+
+
+
+
+</body>
+
+
+</html>

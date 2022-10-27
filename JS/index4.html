@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert-box">
+        <p>alert box</p>
+    </div>
+    <button class="btn1">버튼</button>
+     <button class="btn2">버튼</button>
+        
+        
+    <script>
+        const alertBox = document.querySelector('.alert-box');
+        const btn1 = document.querySelector('.btn1');
+        const btn2 = document.querySelector('.btn2');
+        function openCloseAlert(a) {
+        if( alertBox.style.display === 'none') {
+           alertBox.innerHTML = a;
+           alertBox.style.display = 'block';
+        }else {
+            alertBox.style.display = 'none';
+        }
+       }
+       openCloseAlert('input id');
+       openCloseAlert('input password');
+       btn1.addEventListener("click", openCloseAlert);
+
+
+
+    </script>
+    
+</body>
+</html>

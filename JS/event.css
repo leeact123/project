@@ -1,0 +1,5 @@
+.alert-box {
+    background-color: tomato;
+    border-radius: 10px;
+    display: none;
+}
